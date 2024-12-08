@@ -1,0 +1,88 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: "Zen Old Mincho", serif;
+  color: black;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+  background-color: white; /* Matches the example */
+  width: 25%; /* Adjust width for balance */
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.sidebar-title {
+  font-size: 28px; /* Slightly larger title */
+  font-weight: 700; /* Bold for emphasis */
+  margin-bottom: 40px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin: 20px 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400; /* Regular weight */
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: gray; /* Matches hover behavior */
+}
+
+/* Main Content */
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centers content vertically */
+  padding: 20px;
+  background-color: white; /* Matches the sidebar */
+}
+
+.featured {
+  text-align: center;
+}
+
+.featured-image {
+  width: 200px; /* Properly scales the book cover */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  display: flex;
+  gap: 10px; /* Adds spacing between carousel items */
+  justify-content: center;
+}
+
+.carousel-item {
+  width: 50px;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.carousel-item:hover {
+  transform: scale(1.1); /* Adds zoom effect */
+}

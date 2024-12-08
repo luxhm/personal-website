@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lux Hogan-Murphy</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar Navbar -->
+    <nav class="sidebar">
+      <h1 class="sidebar-title">Lux Hogan-Murphy</h1>
+      <ul>
+        <li><a href="https://etveritaslux.substack.com" target="_blank" class="nav-link">Substack</a></li>
+        <li><a href="tour-dates.html" class="nav-link">Tour Dates</a></li>
+        <li><a href="writing.html" class="nav-link">Writing</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="bio.html" class="nav-link">Bio</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content">
+      <div class="featured">
+        <img src="img/hippo.jpg" alt="Featured Book Cover" id="mainImage" class="featured-image">
+        <div class="carousel">
+          <img src="img/hippo.jpg" alt="Book 1" class="carousel-item" onclick="updateMainImage('img/hippo.jpg')">
+          <img src="img/dance.jpg" alt="Book 1" class="carousel-item" onclick="updateMainImage('img/dance.jpg')">
+          <img src="img/birds.jpg" alt="Book 2" class="carousel-item" onclick="updateMainImage('img/birds.jpg')">
+          <!-- Add more carousel items -->
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function updateMainImage(imageSrc) {
+      // Update the main image src to the clicked thumbnail's src
+      const mainImage = document.getElementById('mainImage');
+      mainImage.src = imageSrc;
+    }
+  </script>
+
+</body>
+</html>
